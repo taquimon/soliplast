@@ -21,8 +21,11 @@ Route::get('/', function()
 
 });
 
-Route::get('inventario', function()
-{
-   return view('pages.inventario');
+// Route::get('inventario', function()
+// {
+//    return view('pages.inventario');
 
-});
+// });
+Route::get('inventario', 'ProductController@index');
+
+
